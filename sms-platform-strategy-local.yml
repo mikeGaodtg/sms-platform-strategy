@@ -1,0 +1,18 @@
+server:
+  port: 9200
+spring:
+  profiles:
+    active: local
+  rabbitmq:
+    host: 192.168.200.129
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+log-index: sms_submit_log
+elasticsearch:
+  host: 192.168.200.129
+  port: 9200
